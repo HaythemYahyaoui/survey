@@ -1,0 +1,22 @@
+server:
+  port: 6060
+
+spring:
+  application:
+    name: configserver
+  security:
+    user:
+      name: root
+      password: 1191990*
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          timeout: 4
+          force-pull: true
+          refreshRate: 30
+          uri: https://github.com/HaythemYahyaoui/survey-config.git
+          skipSslValidation: true
+          username: yahyaoui.haythem.1990@gmail.com
+          password: git1191990
