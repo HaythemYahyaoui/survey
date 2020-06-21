@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: survey-application
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: root
+      password: 1191990*

@@ -7,9 +7,36 @@
         <groupId>com.survey</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>application</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>presentation</module>
+        <module>domain</module>
+        <module>infrastructure</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.survey</groupId>
+                <artifactId>infrastructure</artifactId>
+                <version>${survey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.survey</groupId>
+                <artifactId>business</artifactId>
+                <version>${survey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.survey</groupId>
+                <artifactId>presentation</artifactId>
+                <version>${survey.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
