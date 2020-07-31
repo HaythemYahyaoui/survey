@@ -10,8 +10,8 @@ public class IXTokenBusinessImpl implements IXTokenBusiness {
 
     private IXTokenSPI iXTokenSPI;
 
-    public IXTokenBusinessImpl(IXTokenSPI IXTokenSPI) {
-        this.iXTokenSPI = IXTokenSPI;
+    public IXTokenBusinessImpl(IXTokenSPI iXTokenSPI) {
+        this.iXTokenSPI = iXTokenSPI;
     }
 
     @Override

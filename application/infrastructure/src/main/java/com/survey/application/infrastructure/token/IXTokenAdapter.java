@@ -8,11 +8,8 @@ import org.mapstruct.factory.Mappers;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
 
 import java.math.BigInteger;
-import java.util.logging.Logger;
 
 public class IXTokenAdapter implements IXTokenSPI {
-
-    private static final Logger LOGGER = Logger.getLogger(IXTokenAdapter.class.getName());
 
     private final String uri;
     private final String privateKey;
@@ -51,12 +48,9 @@ public class IXTokenAdapter implements IXTokenSPI {
 
     @Override
     public TransactionReceiptDTO transfer(String recipient, BigInteger amount) throws Exception {
-        TransactionReceipt TransactionReceipt =  ERC20Factory.getInstance(uri, privateKey, contractAddress).transfer(recipient, amount).send();
+        TransactionReceipt transactionReceipt =  ERC20Factory.getInstance(uri, privateKey, contractAddress).transfer(recipient, amount).send();
         TransactionReceiptMapper transactionReceiptMapper = Mappers.getMapper( TransactionReceiptMapper.class );
-        TransactionReceiptDTO transactionReceiptDTO = transactionReceiptMapper.getInstance(TransactionReceipt);
-        LOGGER.info(TransactionReceipt.toString());
-        LOGGER.info(transactionReceiptDTO.toString());
-        return transactionReceiptDTO;
+        return transactionReceiptMapper.getInstance(transactionReceipt);
     }
 
 }

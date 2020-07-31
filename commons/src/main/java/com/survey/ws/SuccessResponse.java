@@ -1,25 +1,24 @@
 package com.survey.ws;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+
 import java.io.Serializable;
 
+@Getter
+@EqualsAndHashCode(callSuper = true)
 public class SuccessResponse extends AbstractResponse {
 
 	private static final long serialVersionUID = 8693802945900291448L;
 
-	public SuccessResponse() {
-		super(200L);
+	private final Serializable data;
+
+	public SuccessResponse(Serializable data) {
+		this.data = data;
 	}
 
-	public SuccessResponse(Object message) {
-		super(200L, message);
-	}
-
-	public SuccessResponse(Long status) {
-		super(status);
-	}
-
-	public SuccessResponse(Long status, Serializable message) {
-		super(status, message);
+	public Object getData() {
+		return data;
 	}
 
 }

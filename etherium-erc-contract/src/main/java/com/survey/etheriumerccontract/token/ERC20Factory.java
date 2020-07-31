@@ -1,6 +1,5 @@
 package com.survey.etheriumerccontract.token;
 
-import me.gjeanmart.tutorials.javaethereum.contracts.generated.ERC20;
 import me.gjeanmart.tutorials.javaethereum.contracts.generated.IXToken;
 import org.web3j.crypto.Credentials;
 import org.web3j.protocol.Web3j;
