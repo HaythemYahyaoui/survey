@@ -27,7 +27,7 @@
         <survey.version>1.0-SNAPSHOT</survey.version>
         <spring-cloud-starter-config>2.2.3.RELEASE</spring-cloud-starter-config>
         <spring-boot-maven-plugin>2.3.0.RELEASE</spring-boot-maven-plugin>
-        <spring-cloud-config-server>2.2.3.RELEASE</spring-cloud-config-server>
+        <spring-cloud-config-server>2.2.4.RELEASE</spring-cloud-config-server>
         <spring-boot-starter-security>2.3.0.RELEASE</spring-boot-starter-security>
         <org.web3j>5.0.0</org.web3j>
         <mapstruct.version>1.3.1.Final</mapstruct.version>
