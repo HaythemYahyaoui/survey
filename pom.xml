@@ -36,7 +36,7 @@
         <lombok.version>1.18.12</lombok.version>
         <spring-boot-starter-validation>2.3.1.RELEASE</spring-boot-starter-validation>
         <spring-boot-starter-data-jpa>2.3.1.RELEASE</spring-boot-starter-data-jpa>
-        <mysql-connector-java>8.0.21</mysql-connector-java>
+        <mysql-connector-java>8.0.28</mysql-connector-java>
         <spring-boot-starter-log4j2>2.3.1.RELEASE</spring-boot-starter-log4j2>
     </properties>
 
